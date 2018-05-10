@@ -9,7 +9,6 @@ let cursorCol = 0,
 
 // elemek összegyűjtése
 const tableGrid = document.getElementById('grid');
-const buttonStart = document.getElementById('start');
 const spanStepCount = document.getElementById('stepCount');
 const spanCurrentMark = document.getElementById('currentMark');
 
@@ -46,7 +45,6 @@ function RenderGrid() {
 // eseményre reagálás
 
 function OnKeyDown(event) {
-    console.log(event);
     switch (event.code) {
         case 'ArrowUp':
         case 'ArrowRight':
